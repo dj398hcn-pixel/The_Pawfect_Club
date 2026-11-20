@@ -1,4 +1,4 @@
-<html>
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,4 +74,4 @@ grooming, daycare, boarding and wellness services.
 </footer>
 <script  src="tpc.js"></script>
 </body>
-</html>
+
