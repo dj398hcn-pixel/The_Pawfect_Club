@@ -1,0 +1,144 @@
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Information of The Pawfect Club</title>
+
+<link rel="stylesheet" href="PawfectStyle.css">
+
+</head>
+
+<body>
+
+<header>
+<a href="home.html">
+<img src = "logoPawfect.png" alt="The Pawfect Club logo" class="logo">
+</a>
+<button type = "button" id="menuBtn" onclick="toggleMenu()">Menu</button>
+
+<nav id="nav">
+<a href="home.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact Us</a>
+</nav>
+</header>
+
+<main>
+
+<section>
+<h2>Our Contact Informations</h2>
+<div class="about-card">
+<h3>Email</h3>
+<ul><li>thepawfectclub@gmail.com</li></ul></div>
+
+<div class="about-card">
+<h3>Contact Number</h3>
+<ul><li>+60 3-875 9215</li></ul></div>
+
+<div class="about-card">
+<h3>Address</h3>
+<ul><li>Lot-1-29, Jalan Damai 1, Taman Damai Jaya 7, 58000, Kuala Lumpur.</li></ul></div>
+
+</section>
+
+
+<form onsubmit="return disp_confirm();">
+<section class="section-intro">
+<h2>User Details</h2>
+<div class="about-card">
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" required><br>
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname" required><br><br>
+
+<p>Username : <br><input type="text" name=“nama" required> </p>
+<p>Password : <br><input type="password" id="pwd" name="pwd" required></p>
+
+<br><label for="hpno">Contact Number:</label><br>
+<input type="text" id="hpno" name="hpno" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required><br>
+
+<br><label for="email">Email:</label><br>
+<input type="text" id="email" name="email" placeholder="you@example.com" required><br>
+
+</div>
+</section>
+
+
+
+
+
+
+
+<section class="section-intro">
+<h2>What are you seeking for?</h2>
+<div class="about-card">
+
+<h4>If you seek for products, which one do you would like to purchase? (Can choose more than 1)</h4>
+<input type="checkbox" id="p1" name="products" value="collar">
+<label for="p1">Breakaway Safety Collar with Bell & ID Tag</label><br>
+<input type="checkbox" id="p2" name="products" value="carrier">
+<label for="p2">Ventilated Clear Space-Capsule Backpack Carrier</label><br>
+<input type="checkbox" id="p3" name="products" value="sofa">
+<label for="p3">Corrugated Cardboard Scratcher Lounge / Sofa</label><br>
+<input type="checkbox" id="p4" name="products" value="teaser">
+<label for="p4">Natural Feather & Bell Wand Teaser (with Refills)</label><br>
+<input type="checkbox" id="p5" name="products" value="chewsticks">
+<label for="p5">Organic Silvervine / Catnip Kicker Plush & Chew Sticks</label><br>
+
+<br><label for="quantity">Quantity (between 1 and 5):</label>
+<br><input type="number" id="quantity" name="quantity" min="1" max="5">
+
+
+<br><h4>If you seek for services, which one do you would like to purchase?</h4>
+<select id="services" name="services">
+<option value="" disabled selected>-- Choose one option --</option>
+<option value="s1">Feline Grooming & Spa Treatments</option>
+<option value="s2">Cat Daycare</option>
+<option value="s3">Monthly / Multi-Service Combo</option>
+</select>
+
+<h4>Cat Name: </h4>
+<input type="text" id="name" name="name" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '');">
+
+<br><h4>Your Cat Gender:</h4>
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Female</label><br>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Male</label><br>
+
+<h4>Is your cat sterilized?</h4>
+<input type="radio" id="yes" name="sterilized" value="yes" required>
+<label for="yes">Yes</label><br>
+<input type="radio" id="no" name="sterilized" value="no" required>
+<label for="no">No</label><br>
+
+<br>
+<label for="bdaymonth"><h4>Appointment Date:</h4></label><br>
+<input type="date" id="appdate" name="appdate" required><br>
+<label for="bdaymonth"><h4>Appointment Time (9:00AM - 7.00PM):</h4></label>
+<input type="time" id="apptime" name="apptime" min="10:00" max="18:00" required>
+</div></section>
+
+<section class="section-intro">
+<h2>Do you have any message for us?</h2>
+<div class="about-card">
+<textarea id="message" name="message" rows="4"></textarea>
+</div>
+</section>
+
+<input type="submit" value="Submit">
+
+</form>
+</main>
+
+<footer>
+<p>&copy; 2026 The Pawfect Club. For your furry ones.</p>
+<p><a href="https://www.petfinder.com">Visit Petfinder for pet care information</a><p>
+</footer>
+<script src=tpc.js></script>
+<script src=price-selector.js></script>
+</body>
+</html>
