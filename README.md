@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HOME | The Pawfect Club</title>
+
 <link rel="stylesheet" href="PawfectStyle.css">
 </head>
 <body>
@@ -71,7 +71,5 @@ grooming, daycare, boarding and wellness services.
 <footer>
 <p>&copy; 2026 The Pawfect Club. For your furry ones.</p>
 <p><a href="https://www.petfinder.com">Visit Petfinder for pet care information</a><p>
-</footer>
-<script  src="tpc.js"></script>
-</body>
+
 
