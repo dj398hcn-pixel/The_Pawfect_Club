@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOME | The Pawfect Club</title>
+<link rel="stylesheet" href="PawfectStyle.css">
+</head>
+<body>
+<header>
+<a href="home.html">
+<img src = "logoPawfect.png" alt="The Pawfect Club logo" class="logo">
+</a>
+<button type = "button" id="menuBtn" onclick="toggleMenu()">Menu</button>
+<nav id="nav">
+<a href="home.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact Us</a>
+</nav>
+
+</header>
+
+<main>
+<h2 id="b"></h2>
+<div class="hero">
+<img src="team.jpg" alt="The Pawfect Club Team with Cats" class="hero-image">
+<div class="hero-text">
+<h1>Welcome to The Pawfect Club</h1>
+<p>
+A happy place for cats and the people who love them.
+We provide friendly care for cats, including;
+grooming, daycare, boarding and wellness services.
+</p>
+<a href="services.html" class="dlbutton">Explore our services</a>
+</div>
+</div>
+<section>
+<h2>Our Featured Services</h2>
+<div class="card-container">
+<div class="card">
+<img src="grooming.jpg" alt="A cat recieving a grooming session">
+<h3>Grooming & Spa</h3>
+<p>A safe and welcoming place for your cat to play, rest and feel at home while you are away.</p>
+</div>
+
+<div class="card">
+<img src="wellness.jpg" alt="A veterinarian checking a pet">
+<h3>Wellness Packages</h3>
+<p>Thoughtful care packages to support your pet's comfort, health and happiness.</p>
+</div>
+</div>
+</section>
+<!--Gallery-->
+<section>
+<h2>Our Pawfect Gallery</h2>
+<p class="section-intro">A few happy moments from our furry friends.</p>
+
+<div class="card-container">
+<div class="card gitem" data-cat="cat">
+<img src="gallery-cat.jpg" alt="A cat relaxing comfortably">
+<p>Mochi having a relaxing day</p>
+</div>
+<div class="card gitem" data-cat="cat grooming">
+<img src="gallery-catgrooming.jpg" alt="A cat after grooming">
+<p>Luna's Spa Day</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 The Pawfect Club. For your furry ones.</p>
+<p><a href="https://www.petfinder.com">Visit Petfinder for pet care information</a><p>
+</footer>
+<script  src="tpc.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+/* THE PAWFECT CLUB
+   Colour palette:
+   #C8A1F4 - light purple
+   #E9F8CA - pale green
+   #A394C4 - muted purple
+   #FFFAF4 - warm cream
+   #2C0B68 - dark purple
+*/
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFAF4;
+    color: #2C0B68;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #2C0B68;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Shared header and navigation */
+header {
+    background-color: #C8A1F4;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+#nav a {
+    color: #2C0B68;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 22px;
+}
+
+#nav a:hover {
+    color: #FFFAF4;
+}
+
+#menuBtn {
+    display: none;
+    background-color: #2C0B68;
+    color: #FFFAF4;
+    border: 1px solid #2C0B68;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+/* place cards side by side */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.section-intro {
+    text-align: center;
+}
+
+
+/* Home page hero section */
+.hero {
+    background-color: #E9F8CA;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-radius: 12px;
+}
+
+.hero-image {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-intro img {
+    width: 30%;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-intro div {
+    flex: 1;
+}
+
+.about-card {
+    background-color: #E9F8CA;
+    border-left: 6px solid #A394C4;
+    padding: 18px 25px;
+    margin: 18px 0;
+    border-radius: 8px;
+}
+
+.about-card h3 {
+    margin-top: 0;
+}
+
+.about-card li {
+    margin-bottom: 8px;
+}
+
+.mission-card {
+    background-color: #E9F8CA;
+}
+
+.vision-card {
+    background-color: #C8A1F4;
+}
+
+/* Download button */
+.dlbutton {
+    display: inline-block;
+    background-color: #2C0B68;
+    color: #FFFAF4;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+.dlbutton:hover {
+    background-color: #A394C4;
+    color: #FFFAF4;
+}
+
+/* Services page tables */
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #A394C4;
+    padding: 10px;
+}
+
+th {
+    background-color: #C8A1F4;
+}
+
+
+
+
+/* Shared footer */
+footer {
+    background-color: #2C0B68;
+    color: #FFFAF4;
+    text-align: center;
+    padding: 22px 5%;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #E9F8CA;
+}
+
+/* Basic responsive layout */
+@media screen and (max-width: 768px) {
+    .hero, .about-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image, .about-intro img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+
+    #nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    main {
+        width: 92%;
+    }
+	#menuBtn {
+        display: inline-block;
+    }
+
+    /* 2. Hide the nav links by default */
+    #nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    /* 3. Show the nav links when JS adds class="open" */
+    #nav.open {
+        display: flex;
+    }
+
+    #nav a {
+        margin-left: 0;
+        padding: 8px 0;
+    }
+}
